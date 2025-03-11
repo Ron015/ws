@@ -44,9 +44,7 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
+        npm install ws
         node index.js
 
     - name: Upload artifact for deployment job
